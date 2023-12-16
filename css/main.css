@@ -1381,16 +1381,18 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .testimonial img {
-  max-width: 90px;
-  max-height: 90px;
-  margin: -45px auto 20px;
-  border-radius: 90px;
-  box-shadow: 0px 10px 10px -8px rgba(0,0,0,.22);
+  max-width: 200px;
+  max-height: 200px;
+  margin: 20px 20px 20px 0;
+  border-radius: 12px;
+  /* box-shadow: 0px 10px 10px -8px rgba(0,0,0,.22); */
+  float: left;
 }
 
 .testimonial .text {
   text-align: left;
   font-style: italic;
+  margin-top: 20px;
 }
 
 .testimonial .author-info {
