@@ -1372,21 +1372,24 @@ textarea.form-control, textarea.form-control:focus {
 
 /* --- Testimonials --- */
 .testimonial {
-  text-align: center;
-  background-color: #333;
-  border: 2px solid #333;
-  border-radius: 16px;
-  margin: 45px 2px 10px;
-  padding: 0 25px 15px 25px;
-}
+    text-align: center;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 16px;
+    margin: 45px 2px 10px;
+    padding: 25px;
+    display: grid;
+    grid-gap: 25px;
+    grid-auto-flow: column;
+    align-items: center;
+  }
 
 .testimonial img {
   max-width: 200px;
   max-height: 200px;
-  margin: 20px 20px 20px 0;
+  /* margin: 20px 20px 20px 20px; */
   border-radius: 12px;
   /* box-shadow: 0px 10px 10px -8px rgba(0,0,0,.22); */
-  float: left;
 }
 
 .testimonial .text {
@@ -1423,6 +1426,66 @@ textarea.form-control, textarea.form-control:focus {
   margin: 0;
 }
 /* --- End of Testimonials --- */
+
+
+/* --- Papers --- */
+.paper {
+  text-align: center;
+  background-color: #333;
+  border: 2px solid #333;
+  border-radius: 16px;
+  margin: 45px 2px 10px;
+  padding: 25px;
+  display: grid;
+  grid-gap: 25px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.paper img {
+  max-width: 200px;
+  max-height: 200px;
+  /* margin: 20px 20px 20px 20px; */
+  border-radius: 12px;
+  /* box-shadow: 0px 10px 10px -8px rgba(0,0,0,.22); */
+}
+
+.paper .text {
+  text-align: left;
+  font-style: italic;
+}
+
+.paper .author-info {
+  position: relative;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.paper .author-info .icon {
+  content: '';
+  position: absolute;
+  font-size: 28px;
+  left: 0;
+  top: 8px;
+  color: #969798;
+  opacity: .5;
+}
+
+.paper .author-info .author {
+  margin: 0;
+  font-size: 15px;
+}
+
+.paper .author-info .company {
+  color: #969798;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+}
+/* --- End of Testimonials --- */
+
+
+
 
 /* --- Clients --- */
 .clients.owl-carousel .client-block {
@@ -1679,39 +1742,39 @@ textarea.form-control, textarea.form-control:focus {
 
 /* --- Skills Values --- */
 .skills-second-style .skill-container.skill-1 .skill-percentage {
-  width: 95%;
+  width: 90%;
 }
 
 .skills-second-style .skill-container.skill-2 .skill-percentage {
-  width: 65%;
-}
-
-.skills-second-style .skill-container.skill-3 .skill-percentage {
   width: 80%;
 }
 
+.skills-second-style .skill-container.skill-3 .skill-percentage {
+  width: 70%;
+}
+
 .skills-second-style .skill-container.skill-4 .skill-percentage {
-  width: 90%;
+  width: 60%;
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 95%;
+  width: 50%;
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
-  width: 85%;
+  width: 40%;
 }
 
 .skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 100%;
+  width: 30%;
 }
 
 .skills-second-style .skill-container.skill-8 .skill-percentage {
-  width: 75%;
+  width: 20%;
 }
 
 .skills-second-style .skill-container.skill-9 .skill-percentage {
-  width: 90%;
+  width: 100%;
 }
 
 /* --- End of Skills Values --- */
@@ -3098,6 +3161,10 @@ blockquote {
   .single-page-content .portfolio-page-content {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .paper {
+    grid-auto-flow: row;
   }
 }
 

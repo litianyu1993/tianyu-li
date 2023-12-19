@@ -26,7 +26,6 @@ var PageTransitions = (function ($, options) {
         support = Modernizr.cssanimations;
 
     function init(options) {
-
         // Get all the .animated-section sections.
         $('.animated-section').each( function() {
             var $page = $(this);
